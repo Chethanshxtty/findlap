@@ -107,3 +107,4 @@ export default defineConfig([
 <!-- Vanguard modification step 33: optimize CSS custom theme variables in main styles -->
 <!-- Vanguard modification step 34: document build validation checks pipeline details -->
 <!-- Vanguard modification step 35: verify visual appearance under 80000 budget search -->
+<!-- Vanguard modification step 36: verify mobile layout layout structure in sandbox -->
