@@ -92,3 +92,4 @@ export default defineConfig([
 <!-- Vanguard modification step 18: refine accent yellow contrast ratio in results container -->
 <!-- Vanguard modification step 19: document the client-side vite proxy settings in readme -->
 <!-- Vanguard modification step 20: add brief architecture overview in documentation -->
+<!-- Vanguard modification step 21: refine build config rules in tsconfig files -->
