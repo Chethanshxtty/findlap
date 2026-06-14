@@ -118,3 +118,4 @@ export default defineConfig([
 <!-- Vanguard modification step 44: standardize uppercase specifications attributes in code -->
 <!-- Vanguard modification step 45: align navbar brand letters layout styling rules -->
 <!-- Vanguard modification step 46: refine spacing below analysis results header node -->
+<!-- Vanguard modification step 47: clarify specs card CPU display parameters -->
