@@ -98,3 +98,4 @@ export default defineConfig([
 <!-- Vanguard modification step 24: improve error boundary retry behavior in layout -->
 <!-- Vanguard modification step 25: update standard budget threshold to match 35k in specs -->
 <!-- Vanguard modification step 26: polish alignment of use case selectors in forms -->
+<!-- Vanguard modification step 27: remove settings drawer state references from app code -->
