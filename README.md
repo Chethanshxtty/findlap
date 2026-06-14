@@ -94,3 +94,4 @@ export default defineConfig([
 <!-- Vanguard modification step 20: add brief architecture overview in documentation -->
 <!-- Vanguard modification step 21: refine build config rules in tsconfig files -->
 <!-- Vanguard modification step 22: organize types mappings inside types definitions file -->
+<!-- Vanguard modification step 23: document silent fallback routing design in readme -->
