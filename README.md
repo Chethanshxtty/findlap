@@ -99,3 +99,4 @@ export default defineConfig([
 <!-- Vanguard modification step 25: update standard budget threshold to match 35k in specs -->
 <!-- Vanguard modification step 26: polish alignment of use case selectors in forms -->
 <!-- Vanguard modification step 27: remove settings drawer state references from app code -->
+<!-- Vanguard modification step 28: clarify env credential requirements in setup details -->
