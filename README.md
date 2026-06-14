@@ -105,3 +105,4 @@ export default defineConfig([
 <!-- Vanguard modification step 31: add visual verification checklist inside walkthrough -->
 <!-- Vanguard modification step 32: document triple fallback image load system in docs -->
 <!-- Vanguard modification step 33: optimize CSS custom theme variables in main styles -->
+<!-- Vanguard modification step 34: document build validation checks pipeline details -->
