@@ -103,3 +103,4 @@ export default defineConfig([
 <!-- Vanguard modification step 29: optimize bundle generation assets sizes in build -->
 <!-- Vanguard modification step 30: configure base project metadata tags in html head -->
 <!-- Vanguard modification step 31: add visual verification checklist inside walkthrough -->
+<!-- Vanguard modification step 32: document triple fallback image load system in docs -->
