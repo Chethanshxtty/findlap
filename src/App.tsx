@@ -200,7 +200,7 @@ function App() {
           <h1 className="text-4xl md:text-7xl font-extrabold tracking-[-0.05em] uppercase leading-[0.9] text-white flex flex-col items-center">
             <span>Find Your</span>
             <span className="text-[#E8FF00] my-2">Perfect</span>
-            <span>Machine.</span>
+            <span>Partner.</span>
           </h1>
 
           {/* Form Area */}
