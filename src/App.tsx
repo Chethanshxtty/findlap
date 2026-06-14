@@ -37,6 +37,29 @@ const getStableLaptopImage = (name: string, useTags: string[] = []): string => {
   return images[index];
 };
 
+const getShoppingUrl = (storeName: string, laptopName: string, returnedUrl: string): string => {
+  const cleanStore = storeName.toLowerCase().trim();
+  const query = encodeURIComponent(laptopName);
+  
+  if (cleanStore.includes('amazon')) {
+    return `https://www.amazon.in/s?k=${query}`;
+  }
+  if (cleanStore.includes('flipkart')) {
+    return `https://www.flipkart.com/search?q=${query}`;
+  }
+  if (cleanStore.includes('croma')) {
+    return `https://www.croma.com/searchB?q=${query}`;
+  }
+  if (cleanStore.includes('reliance')) {
+    return `https://www.reliancedigital.in/search?q=${query}`;
+  }
+  
+  if (returnedUrl && returnedUrl.startsWith('http')) {
+    return returnedUrl;
+  }
+  return `https://www.google.com/search?q=${encodeURIComponent(storeName + ' ' + laptopName)}`;
+};
+
 function App() {
   const [budget, setBudget] = useState<number | ''>('');
   const [useCases, setUseCases] = useState<string[]>(['coding']);
@@ -366,7 +389,7 @@ function App() {
                     {results.bestPick.stores.map((store, i) => (
                       <a 
                         key={i}
-                        href={store.url} 
+                        href={getShoppingUrl(store.name, results.bestPick.name, store.url)} 
                         target="_blank" 
                         rel="noreferrer"
                         className="w-full text-center border border-vanguard-border hover:border-[#E8FF00] bg-vanguard-darker hover:bg-white/[0.02] text-white py-2 px-3 text-2xs font-mono tracking-widest uppercase transition-colors flex justify-between items-center"
@@ -422,7 +445,7 @@ function App() {
                         {laptop.stores.slice(0, 2).map((store, i) => (
                           <a 
                             key={i} 
-                            href={store.url} 
+                            href={getShoppingUrl(store.name, laptop.name, store.url)} 
                             target="_blank" 
                             rel="noreferrer"
                             className="text-[9px] font-mono text-[#888888] hover:text-[#E8FF00] tracking-wider truncate"
