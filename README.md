@@ -77,3 +77,4 @@ export default defineConfig([
 <!-- Vanguard modification step 3: clean unused comments from the postCSS config -->
 <!-- Vanguard modification step 4: add note about standard budget limits in readme -->
 <!-- Vanguard modification step 5: document fallback images flow in repository documentation -->
+<!-- Vanguard modification step 6: improve specs layout readability in cards -->
