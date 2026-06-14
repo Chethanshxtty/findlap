@@ -71,3 +71,5 @@ export default defineConfig([
   },
 ])
 ```
+
+<!-- Vanguard modification step 1: optimize spacing in header container class -->
