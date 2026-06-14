@@ -96,3 +96,4 @@ export default defineConfig([
 <!-- Vanguard modification step 22: organize types mappings inside types definitions file -->
 <!-- Vanguard modification step 23: document silent fallback routing design in readme -->
 <!-- Vanguard modification step 24: improve error boundary retry behavior in layout -->
+<!-- Vanguard modification step 25: update standard budget threshold to match 35k in specs -->
