@@ -129,3 +129,4 @@ export default defineConfig([
 <!-- Vanguard modification step 55: document purchase channels redirection logic -->
 <!-- Vanguard modification step 56: verify e-commerce redirect parameters in dev build -->
 <!-- Vanguard modification step 57: optimize interactive card links wrapper elements -->
+<!-- Vanguard modification step 58: document external link indicator style adjustments -->
