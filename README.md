@@ -85,3 +85,4 @@ export default defineConfig([
 <!-- Vanguard modification step 11: optimize loading phase interval timer in react app -->
 <!-- Vanguard modification step 12: clarify purchase channels mapping specifications -->
 <!-- Vanguard modification step 13: enhance custom scrollbar track colors for dark mode -->
+<!-- Vanguard modification step 14: remove debugging logs from api.ts wrapper -->
