@@ -123,3 +123,4 @@ export default defineConfig([
 <!-- Vanguard modification step 49: optimize render logic checks in results container -->
 <!-- Vanguard modification step 50: document key integration requirements for Anthropic -->
 <!-- Vanguard modification step 51: add performance benchmarks note inside documentation -->
+<!-- Vanguard modification step 52: refine focus styles for tag buttons inside form -->
