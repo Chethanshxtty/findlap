@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vanguard-bg: #09090b;
+  --color-vanguard-accent: #E8FF00;
+  --color-vanguard-muted: #888888;
+  --color-vanguard-border: #27272a;
+  --color-vanguard-dark: #121215;
+  --color-vanguard-darker: #18181b;
+  
+  --font-sans: 'Inter', sans-serif;
+  
+  --border-radius-none: 0px;
+  --border-radius-sm: 0px;
+  --border-radius-md: 0px;
+  --border-radius-lg: 0px;
+  --border-radius-xl: 0px;
+  --border-radius-2xl: 0px;
+  --border-radius-3xl: 0px;
+  --border-radius-full: 0px;
+  
+  --letter-spacing-widest: 0.2em;
+}
+
+@layer base {
+  body {
+    background-color: #09090b;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Hide Chrome, Safari, Edge, Opera spin buttons */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Hide Firefox spin buttons */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* Custom scrollbar to match pitch black and acid yellow style */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8FF00;
+}
+
+/* Red alert input outline flashing animation */
+@keyframes red-flash {
+  0%, 100% {
+    border-color: #222222;
+  }
+  50% {
+    border-color: #ff4455;
+  }
+}
+
+.animate-red-flash {
+  animation: red-flash 0.3s ease-in-out 2;
+}
+
+/* Custom block loading bar animation */
+@keyframes loading-progress {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animate-loading-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #E8FF00;
+  animation: loading-progress 1.5s infinite linear;
+}
