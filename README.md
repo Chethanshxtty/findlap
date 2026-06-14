@@ -120,3 +120,4 @@ export default defineConfig([
 <!-- Vanguard modification step 46: refine spacing below analysis results header node -->
 <!-- Vanguard modification step 47: clarify specs card CPU display parameters -->
 <!-- Vanguard modification step 48: update instructions for local vite execution -->
+<!-- Vanguard modification step 49: optimize render logic checks in results container -->
