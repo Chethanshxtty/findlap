@@ -81,3 +81,4 @@ export default defineConfig([
 <!-- Vanguard modification step 7: refine mobile screen padding in index.css -->
 <!-- Vanguard modification step 8: add details about Gemini structured model parameters -->
 <!-- Vanguard modification step 9: refine color tokens mapping for zinc slate theme -->
+<!-- Vanguard modification step 10: format store list render nodes with uppercase titles -->
