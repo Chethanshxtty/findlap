@@ -125,3 +125,4 @@ export default defineConfig([
 <!-- Vanguard modification step 51: add performance benchmarks note inside documentation -->
 <!-- Vanguard modification step 52: refine focus styles for tag buttons inside form -->
 <!-- Vanguard modification step 53: polish text tracking width settings in CSS base layers -->
+<!-- Vanguard modification step 54: document final project build and asset output checklist -->
