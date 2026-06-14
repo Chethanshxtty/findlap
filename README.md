@@ -87,3 +87,4 @@ export default defineConfig([
 <!-- Vanguard modification step 13: enhance custom scrollbar track colors for dark mode -->
 <!-- Vanguard modification step 14: remove debugging logs from api.ts wrapper -->
 <!-- Vanguard modification step 15: improve responsiveness for vertical screens in app -->
+<!-- Vanguard modification step 16: update budget validation warning message format -->
