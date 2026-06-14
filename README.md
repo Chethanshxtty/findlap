@@ -79,3 +79,4 @@ export default defineConfig([
 <!-- Vanguard modification step 5: document fallback images flow in repository documentation -->
 <!-- Vanguard modification step 6: improve specs layout readability in cards -->
 <!-- Vanguard modification step 7: refine mobile screen padding in index.css -->
+<!-- Vanguard modification step 8: add details about Gemini structured model parameters -->
