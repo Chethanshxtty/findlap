@@ -89,3 +89,4 @@ export default defineConfig([
 <!-- Vanguard modification step 15: improve responsiveness for vertical screens in app -->
 <!-- Vanguard modification step 16: update budget validation warning message format -->
 <!-- Vanguard modification step 17: improve stencil A logo paths in svg source -->
+<!-- Vanguard modification step 18: refine accent yellow contrast ratio in results container -->
