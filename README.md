@@ -78,3 +78,4 @@ export default defineConfig([
 <!-- Vanguard modification step 4: add note about standard budget limits in readme -->
 <!-- Vanguard modification step 5: document fallback images flow in repository documentation -->
 <!-- Vanguard modification step 6: improve specs layout readability in cards -->
+<!-- Vanguard modification step 7: refine mobile screen padding in index.css -->
