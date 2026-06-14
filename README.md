@@ -110,3 +110,4 @@ export default defineConfig([
 <!-- Vanguard modification step 36: verify mobile layout layout structure in sandbox -->
 <!-- Vanguard modification step 37: refine custom focus outline for interactive controls -->
 <!-- Vanguard modification step 38: clarify mock data records fallback scenarios -->
+<!-- Vanguard modification step 39: document the rate limits retry error handling flow -->
