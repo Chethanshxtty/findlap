@@ -53,6 +53,21 @@ const getShoppingUrl = (storeName: string, laptopName: string, returnedUrl: stri
   if (cleanStore.includes('reliance')) {
     return `https://www.reliancedigital.in/search?q=${query}`;
   }
+  if (cleanStore.includes('hp')) {
+    return `https://www.hp.com/in-en/shop/search/?q=${query}`;
+  }
+  if (cleanStore.includes('lenovo')) {
+    return `https://www.lenovo.com/in/en/search?q=${query}`;
+  }
+  if (cleanStore.includes('dell')) {
+    return `https://www.dell.com/en-in/search/${query}`;
+  }
+  if (cleanStore.includes('asus')) {
+    return `https://www.asus.com/in/store/search?q=${query}`;
+  }
+  if (cleanStore.includes('apple')) {
+    return `https://www.apple.com/in/search/${query}`;
+  }
   
   if (returnedUrl && returnedUrl.startsWith('http')) {
     return returnedUrl;
@@ -357,15 +372,25 @@ function App() {
                 </div>
 
                  {/* Column 1: Laptop Image (left) */}
-                <div className="lg:col-span-3 flex flex-col justify-center">
-                  <LaptopImage brand={results.bestPick.brand} name={results.bestPick.name} imageUrl={results.bestPick.imageUrl} className="h-[180px]" />
-                </div>
+                <a 
+                  href={getShoppingUrl(results.bestPick.stores[0]?.name || 'Amazon', results.bestPick.name, results.bestPick.stores[0]?.url || '')}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="lg:col-span-3 flex flex-col justify-center cursor-pointer block"
+                >
+                  <LaptopImage brand={results.bestPick.brand} name={results.bestPick.name} imageUrl={results.bestPick.imageUrl} className="h-[180px] hover:border-[#E8FF00] transition-colors" />
+                </a>
 
                 {/* Column 2: Specs & Quote (center) */}
                 <div className="lg:col-span-6 flex flex-col gap-4">
-                  <div className="text-lg font-bold uppercase tracking-wider font-mono text-white">
-                    {results.bestPick.name}
-                  </div>
+                  <a
+                    href={getShoppingUrl(results.bestPick.stores[0]?.name || 'Amazon', results.bestPick.name, results.bestPick.stores[0]?.url || '')}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-lg font-bold uppercase tracking-wider font-mono text-white hover:text-[#E8FF00] transition-colors flex items-center gap-1.5 w-fit"
+                  >
+                    {results.bestPick.name} <span className="text-xs text-[#888888]">↗</span>
+                  </a>
                   
                   {/* Quote with accent yellow left border */}
                   <div className="border-l-2 border-[#E8FF00] pl-4 italic text-xs text-[#888888] leading-relaxed uppercase tracking-wider font-mono">
@@ -394,7 +419,7 @@ function App() {
                         rel="noreferrer"
                         className="w-full text-center border border-vanguard-border hover:border-[#E8FF00] bg-vanguard-darker hover:bg-white/[0.02] text-white py-2 px-3 text-2xs font-mono tracking-widest uppercase transition-colors flex justify-between items-center"
                       >
-                        <span>{store.name}</span>
+                        <span>{store.name} ↗</span>
                         <span className="text-[#E8FF00] font-bold">{store.price}</span>
                       </a>
                     ))}
@@ -415,7 +440,14 @@ function App() {
                     {/* Content area */}
                     <div className="flex flex-col gap-4 z-10 pt-8">
                       {/* Laptop Image (height 140px) */}
-                      <LaptopImage brand={laptop.brand} name={laptop.name} useTags={laptop.useTags} imageUrl={laptop.imageUrl} className="h-[140px]" />
+                      <a
+                        href={getShoppingUrl(laptop.stores[0]?.name || 'Amazon', laptop.name, laptop.stores[0]?.url || '')}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="cursor-pointer block"
+                      >
+                        <LaptopImage brand={laptop.brand} name={laptop.name} useTags={laptop.useTags} imageUrl={laptop.imageUrl} className="h-[140px] hover:border-[#E8FF00] transition-colors" />
+                      </a>
 
                       {/* Use Tags row */}
                       <div className="flex flex-wrap gap-1.5 mt-1">
@@ -425,9 +457,15 @@ function App() {
                       </div>
 
                       {/* Laptop Name */}
-                      <h3 className="text-sm font-bold uppercase tracking-wider font-mono text-white leading-tight mt-1 truncate">
-                        {laptop.name}
-                      </h3>
+                      <a
+                        href={getShoppingUrl(laptop.stores[0]?.name || 'Amazon', laptop.name, laptop.stores[0]?.url || '')}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm font-bold uppercase tracking-wider font-mono text-white hover:text-[#E8FF00] transition-colors leading-tight mt-1 truncate flex items-center justify-between"
+                      >
+                        <span>{laptop.name}</span>
+                        <span className="text-[10px] text-[#888888] font-normal font-mono">↗</span>
+                      </a>
 
                       {/* Specs block */}
                       <SpecsGrid specs={laptop.specs} />
@@ -448,9 +486,10 @@ function App() {
                             href={getShoppingUrl(store.name, laptop.name, store.url)} 
                             target="_blank" 
                             rel="noreferrer"
-                            className="text-[9px] font-mono text-[#888888] hover:text-[#E8FF00] tracking-wider truncate"
+                            className="text-[9px] font-mono text-[#888888] hover:text-[#E8FF00] tracking-wider truncate flex items-center justify-end gap-1"
                           >
-                            {store.name.toUpperCase()} @ <span className="font-bold text-white">{store.price}</span>
+                            <span>{store.name.toUpperCase()} ↗</span>
+                            <span className="font-bold text-white">{store.price}</span>
                           </a>
                         ))}
                       </div>
