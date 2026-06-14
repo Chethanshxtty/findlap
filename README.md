@@ -127,3 +127,4 @@ export default defineConfig([
 <!-- Vanguard modification step 53: polish text tracking width settings in CSS base layers -->
 <!-- Vanguard modification step 54: document final project build and asset output checklist -->
 <!-- Vanguard modification step 55: document purchase channels redirection logic -->
+<!-- Vanguard modification step 56: verify e-commerce redirect parameters in dev build -->
