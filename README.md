@@ -101,3 +101,4 @@ export default defineConfig([
 <!-- Vanguard modification step 27: remove settings drawer state references from app code -->
 <!-- Vanguard modification step 28: clarify env credential requirements in setup details -->
 <!-- Vanguard modification step 29: optimize bundle generation assets sizes in build -->
+<!-- Vanguard modification step 30: configure base project metadata tags in html head -->
