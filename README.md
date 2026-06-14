@@ -83,3 +83,4 @@ export default defineConfig([
 <!-- Vanguard modification step 9: refine color tokens mapping for zinc slate theme -->
 <!-- Vanguard modification step 10: format store list render nodes with uppercase titles -->
 <!-- Vanguard modification step 11: optimize loading phase interval timer in react app -->
+<!-- Vanguard modification step 12: clarify purchase channels mapping specifications -->
